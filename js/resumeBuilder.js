@@ -53,10 +53,25 @@ work.employer = "General Motors";
 work.years_worked = "2";
 work.city = "Warren";
 
-var education = {}
-education["name"] = "UC Berkeley";
-education["years_attended"] = 4;
-education["school_city"] = "Berkeley";
+var education = {
+	"schools": [{
+		"name": "UC Berkeley",
+		"city": "Berkeley, California",
+		"degree": "BS",
+		"major": "Chemical Engineering"
+	}],
+	"Online Courses": [{
+			"program": "Udacity",
+			"courses": ["JavaScript Basics", "Python Basics", "Scalable APIs"]
+		},
+
+		{
+			"program": "Princeton",
+			"courses": ["Introduction to Algorithms 1", "Introduction to Algorithms 2"]
+		}
+	]
+}
+
 
 $("#workExperience").append(work["position"]);
 $("#education").append(education.name);
